@@ -8,7 +8,10 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
-      <MainLayout>
+      <MainLayout
+        heading="Title of Page"
+        description="We’ve generated an email template for you. Copy and paste this email into Klaviyo or Mailchimp."
+      >
         <HomeContainer/>
       </MainLayout>
     </>

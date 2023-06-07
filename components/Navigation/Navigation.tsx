@@ -20,7 +20,7 @@ const menus = [...Array(5)].map((_, i) => {
 
 export const Navigation: FunctionComponent = () => {
   return (
-    <div class="grid h-screen bg-nav-bg text-white p-[24px] pt-[50px] overflow-auto content-between">
+    <div class="grid h-screen bg-nav-bg text-white px-[24px] py-[40px] overflow-auto content-between">
       <div class="grid gap-6">
         {menus.map(menu => (
           <a key={menu.href} href={menu.href} class="flex gap-2"><menu.icon/>{menu.label}</a>

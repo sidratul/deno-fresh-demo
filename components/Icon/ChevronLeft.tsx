@@ -2,11 +2,12 @@ import { h, FunctionComponent } from 'preact';
 import { IconSvgProps } from './types.ts';
 
 export const ChevronLeftIcon:  FunctionComponent<IconSvgProps> =  ({
-  size = 24,
+  size = 16,
   color = 'currentColor',
 }) => (
-  <svg width={size} height={size} stroke={color} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <svg width={size} height={size} stroke={color} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00004 2.66671C5.05452 2.66671 2.66671 5.05452 2.66671 8.00004C2.66671 10.9456 5.05452 13.3334 8.00004 13.3334C10.9456 13.3334 13.3334 10.9456 13.3334 8.00004C13.3334 5.05452 10.9456 2.66671 8.00004 2.66671ZM1.33337 8.00004C1.33337 4.31814 4.31814 1.33337 8.00004 1.33337C11.6819 1.33337 14.6667 4.31814 14.6667 8.00004C14.6667 11.6819 11.6819 14.6667 8.00004 14.6667C4.31814 14.6667 1.33337 11.6819 1.33337 8.00004Z" fill="#E3960F"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.13807 5.52864C9.39842 5.78899 9.39842 6.2111 9.13807 6.47145L7.60948 8.00004L9.13807 9.52864C9.39842 9.78899 9.39842 10.2111 9.13807 10.4714C8.87772 10.7318 8.45561 10.7318 8.19526 10.4714L6.19526 8.47145C5.93491 8.2111 5.93491 7.78899 6.19526 7.52864L8.19526 5.52864C8.45561 5.26829 8.87772 5.26829 9.13807 5.52864Z" fill="#E3960F"/>
   </svg>
+
 )

@@ -9,6 +9,8 @@ export default {
       'green' : '#A7CAB1',
       'white': '#FFFFFF',
       'black': '#000000',
+      'black-60': 'rgba(0, 0, 0, 0.6)',
+      'yellow-800': '#E3960F',
     }
   }
 } as Options;
