@@ -4,7 +4,7 @@ export function Button(props: JSX.HTMLAttributes<HTMLButtonElement>) {
   return (
     <button
       {...props}
-      class={`bg-green px-[20px] py-[8px] rounded-lg ${props.class}`}
+      class={`bg-green px-[20px] py-[8px] rounded-lg ${props.class? props.class: ''}`}
     />
   );
 }
