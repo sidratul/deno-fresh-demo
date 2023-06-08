@@ -4,6 +4,7 @@ import { Navigation } from '../components/Navigation/index.ts';
 import { Card } from '../components/Card.tsx';
 import { ChevronLeftIcon } from '../components/Icon/ChevronLeft.tsx';
 import { ExpertButton } from '../components/Actions/ExpertButton.tsx';
+import { Footer } from '../components/Footer.tsx';
 
 interface MainLayoutProps {
   heading: string;
@@ -40,6 +41,9 @@ export const MainLayout: FunctionComponent<MainLayoutProps> = ({ heading, descri
                       <ExpertButton href="#"/>
                       <ExpertButton href="#"/>
                     </Card>
+                  </div>
+                  <div class="col-span-3">
+                    <Footer/>
                   </div>
                 </div>
               </div>
