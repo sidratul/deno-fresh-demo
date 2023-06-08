@@ -1,20 +1,16 @@
-import Counter from "../../islands/Counter.tsx";
+import { FunctionComponent } from "preact";
+import { HomeData } from "../../routes/index.tsx";
 
-export function HomeContainer() {
+export const HomeContainer: FunctionComponent<HomeData> = ({ html, subject }) => {
   return (
-    <>
-      <div class="p-4 mx-auto max-w-screen-md">
-        <img
-          src="/logo.svg"
-          class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-        <p class="my-6">
-          Welcome to `fresh`. Try updating this message in the
-          ./routes/index.tsx file, and refresh.
-        </p>
-        {/* <Counter start={3} /> */}
+    <div class="p-6 gap-10">
+      <div>
+        <div class="text-black-40">Subject:</div>
+        <div class="font-medium">{subject}</div>
       </div>
-    </>
+      <div dangerouslySetInnerHTML={{
+        __html: html
+      }} />
+    </div>
   );
 }
