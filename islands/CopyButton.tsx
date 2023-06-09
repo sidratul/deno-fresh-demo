@@ -15,7 +15,7 @@ export default function CopyButton({ html }: {html: string}) {
 
   return (
     <Button
-      class="text-sm"
+      class="text-sm w-full h-full"
       onClick={onCopy}
     >{
       !isCopied?  'Copy Html': (

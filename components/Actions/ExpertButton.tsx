@@ -11,7 +11,7 @@ export function ExpertButton(props: ExpertButtonProps ) {
     <a href={props.href}>
       <Button class="flex gap-4 py-4 px-6 items-center">
         <span class="text-left  font-medium">Connect me with experts to do this</span>
-        <ChevronRightIcon/>
+        <span class="ml-auto"><ChevronRightIcon/></span>
       </Button>
     </a>
   );
